@@ -117,7 +117,8 @@ function getUserMediaConstraints() {
   }
   if (framerateInput.value !== '0') {
     constraints.video.frameRate = {};
-    constraints.video.frameRate.min = framerateInput.value;
+//    constraints.video.frameRate.min = framerateInput.value;
+    constraints.video.frameRate.max = framerateInput.value;
   }
   return constraints;
 }
